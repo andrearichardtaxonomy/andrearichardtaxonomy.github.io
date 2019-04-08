@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+
+#diagram-container {
+    margin-top: 3vh;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#diagram-box {
+    height: 88vh;
+}
+
+.navbar {
+    background-color: #8EC5FC;
+    background-image: linear-gradient(270deg, #8EC5FC 0%, #E0C3FC 100%);
+    border-bottom: black 1px solid;
+}
+
+.diagramSlice:hover {
+    cursor: pointer;
+}
+
+.diagramSlice:hover > .cls-1{
+    fill: lightcyan;
+}
