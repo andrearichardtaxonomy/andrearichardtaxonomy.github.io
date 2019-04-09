@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     border: 0;
-    text-decoration: none;
 }
 
 body {
@@ -10,18 +9,66 @@ body {
 
 }
 
+.VARK-header {
+    margin-top: -1em;
+}
+
+.VARK-header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.VARK-header-link {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.VARK-header-link:link, .VARK-header-link:hover, .VARK-header-link:focus  {
+    text-decoration: none;
+}
+
+#V {
+    color: #19ce2a;
+}
+
+#A {
+    color: #ea6f13;
+}
+
+#R {
+    color: #ef1bb3;
+}
+
+#K {
+    color: #2fddf4;
+}
+
+.diagram-heading {
+    text-align: center;
+    font-size: 4em;
+    /* display: flex;
+    justify-content: center; */
+    display: inline-block;
+    margin: 0;
+}
+
+.diagram-heading:hover {
+    opacity: 0.5;
+}
 
 #diagram-container {
-    margin-top: 3vh;
     width: 100%;
-    height: 90vh;
+    height: 85vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #diagram-box {
-    height: 88vh;
+    height: 84vh;
 }
 
 .navbar {
@@ -34,6 +81,31 @@ body {
     cursor: pointer;
 }
 
-.diagramSlice:hover > .cls-1{
-    fill: lightcyan;
+.diagramSlice:hover > .cls-1 {
+    fill: rgb(204, 250, 250);
+}
+
+.diagramSlice:hover > .cls-12 {
+    fill: rgb(204, 250, 250);
+}
+
+.unusedSlice:hover {
+    cursor: default;
+}
+
+.unusedSlice:hover > .cls-1 {
+    fill: rgba(94, 85, 209, 0.637);
+}
+
+#model-desc {
+    margin-top: 2vh;
+}
+
+#model-desc > .row > .col-sm-12 {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#model-desc > .row > .col-sm-12 > p {
+    font-weight: normal;
 }
